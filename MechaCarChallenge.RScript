@@ -1,0 +1,4 @@
+MechaCar <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
+
+lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + mpg,MechaCar) #create multiple linear model
+summary(lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + mpg,MechaCar)) #summarize linear model
